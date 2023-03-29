@@ -21,4 +21,16 @@ export const StyledContactsContainer = styled.div`
 	.btn-open-modal:hover {
 		color: var(--success);
 	}
+	.contact-cards-container {
+		gap: 10px;
+		display: flex;
+		flex-direction: column;
+	}
+	@media only screen and (min-width: 900px) {
+		.contact-cards-container {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
 `;

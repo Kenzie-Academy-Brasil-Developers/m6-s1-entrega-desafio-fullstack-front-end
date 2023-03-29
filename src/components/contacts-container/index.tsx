@@ -10,6 +10,7 @@ import CreateContactForm from "./create-contact-form";
 
 export default function ContactsContainer() {
 	const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
+	const { contacts, setContacts } = useContactContext();
 
 	return (
 		<StyledContactsContainer>
@@ -24,13 +25,11 @@ export default function ContactsContainer() {
 			<button onClick={onClickOpenModal} className="btn-open-modal">
 				<BsPersonFillAdd />
 			</button>
-			{LoadContacts()}
+			<div className="contact-cards-container">{LoadContacts()}</div>
 		</StyledContactsContainer>
 	);
 
 	function LoadContacts() {
-		const { contacts, setContacts } = useContactContext();
-
 		if (contacts.length > 0) {
 			return contacts.map((contact) => (
 				<ContactsCard key={contact.id} contact={contact} />

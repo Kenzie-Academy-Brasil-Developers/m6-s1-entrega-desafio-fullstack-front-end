@@ -115,6 +115,8 @@ a{
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
+    background-color: var(--grey4);
 }
 `;
 export default GlobalStyle;

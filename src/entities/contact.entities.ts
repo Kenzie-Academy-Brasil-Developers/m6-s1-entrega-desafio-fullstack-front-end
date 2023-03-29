@@ -18,24 +18,3 @@ export interface IContactCreate {
 	name: string;
 	phone?: string;
 }
-
-// export class Contact {
-// 	id: number;
-// 	email: string;
-// 	name: string;
-// 	phone: string;
-// 	created_at: string;
-// 	constructor({ id, email, name, phone, created_at }: IContact) {
-// 		this.id = id;
-// 		this.email = email;
-// 		this.name = name;
-// 		this.phone = phone;
-// 		this.created_at = created_at;
-// 	}
-
-// 	edit({ email, name, phone }: IContactEdit) {
-// 		this.email ??= email;
-// 		this.name ??= name;
-// 		this.phone ??= phone;
-// 	}
-// }

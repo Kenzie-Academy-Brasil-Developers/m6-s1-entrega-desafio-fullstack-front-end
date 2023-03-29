@@ -35,7 +35,7 @@ export const StyledContactsCard = styled.div`
 	.card-content {
 		color: #cccccc;
 	}
-	@media only screen and (min-width: 400px) {
+	@media only screen and (min-width: 500px) {
 		width: 400px;
 	}
 `;
