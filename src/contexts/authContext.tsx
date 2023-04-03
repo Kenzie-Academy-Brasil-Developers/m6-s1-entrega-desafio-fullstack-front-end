@@ -65,8 +65,6 @@ function AuthProvider({ children }) {
 			);
 			localStorage.setItem("@clientsCrmId", response.data.user_id);
 
-			console.log(response.data);
-
 			const user = await api.get(`users/${response.data.user_id}/`);
 			setUser(user.data);
 			toast.success("Login confirmado", {
